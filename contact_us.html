@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bakoel Koffie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f7ecc73a32e9067a9c3b392/1603106333054-XX5GPB1NKZPVYNS5431U/favicon.ico?format=100w">
+    <link rel="stylesheet" href="cssdasar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+ <!-- Navbar (sit on top) -->
+ <div class="resto-top bg-pink">
+  <div class="resto-bar resto-card" id="myNavbar">
+    <a href="#home" class="resto-bar-item resto-button resto-wide">Bakoel Koffie</a>
+    <!-- Right-sided navbar links -->
+    <div class="resto-right resto-hide-small">
+      <a href="index.html" class="resto-bar-item resto-button">HOME</a>
+      <a href="biodata.html" class="resto-bar-item resto-button"> BIODATA</a>
+      <a href="contact_us.html" class="resto-bar-item resto-button">CONTACT US</a>
+      <a href="about_us.html" class="resto-bar-item resto-button"> ABOUT US</a>
+      <a href="https://twitter.com/bakoelkoffie_id?lang=en" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-twitter"></i></a>
+      <a href="https://www.facebook.com/Bakoelkoffie/" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-facebook-official"></i></a>
+      <a href="https://www.instagram.com/bakoel_koffie/" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCy8VkzXPMdukwwZtWdgxyMA" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-youtube"></i></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="resto-bar-item resto-button resto-right resto-hide-large resto-hide-medium"
+      onclick="buka_togle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="resto-sidebar resto-bar-block resto-black resto-card resto-animate-left resto-hide-medium resto-hide-large"
+  style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="resto_close()" class="resto-bar-item resto-button resto-large resto-padding-16">Close ×</a>
+  <a href="index.html" onclick="resto_close()" class="resto-bar-item resto-button">HOME</a>
+  <a href="biodata.html" onclick="resto_close()" class="resto-bar-item resto-button">BIODATA</a>
+  <a href="contact_us.html" onclick="resto_close()" class="resto-bar-item resto-button">CONTACT US</a>
+  <a href="about_us.html" onclick="resto_close()" class="resto-bar-item resto-button">ABOUT US</a>
+  <a href="#" onclick="resto_close()" class="resto-bar-item resto-button ic-menu-hp">
+  <i class="fa fa-twitter resto-hover-opacity"></i> <i class="fa fa-facebook-official resto-hover-opacity"></i>
+  <i class="fa fa-instagram resto-hover-opacity"></i> <i class="fa fa-youtube resto-hover-opacity"></i></a>
+    
+</nav>
+
+    <!-- Contact Section -->
+    <div class="resto-container bg-pink" style="padding:10%" id="contact">
+        <h3 class="resto-center">Contact Us</h3>
+        <p class="resto-center resto-large">Send us a message:</p>
+        <div style="margin-top:48px: padding-left:7%;">
+            <p><i class="fa fa-map-marker fa-fw resto-xxlarge resto-margin-right"></i>Cikini jakarta</p>
+            <p><i class="fa fa-phone fa-fw resto-xxlarge resto-margin-right"></i> Phone: +622131936608</p>
+            <p><i class="fa fa-envelope fa-fw resto-xxlarge resto-margin-right"> </i> Email: resto@mail.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="resto-input resto-border" type="text" placeholder="Full Name" required name="nama"></p>
+                <p><input class="resto-input resto-border" type="text" placeholder="E-mail" required name="Email"></p>
+                <p><input class="resto-input resto-border" type="text" placeholder="Username" required
+                        name="nama_pengguna"></p>
+                <p><input class="resto-input resto-border" type="password" placeholder="Password" required name="password">
+                </p>
+                <p>Select Gender :</p>
+                <p>
+                    <input type="radio" id="radio1" name="jeniskelamin">
+                    <label for="radio1">Female</label>
+                    <input type="radio" id="radio1" name="jeniskelamin">
+                    <label for="radio1">Male</label>
+                </p>
+
+                <p>Select Religion :</p>
+                <p>
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Khonghucu">Khonghucu</option>
+                      </select>
+                </p>
+
+
+                <textarea name="message" rows="6" cols="20" class="form-control" id="pesan" placeholder="Address"
+                    required=""></textarea>
+
+
+                <p>
+                    Hobbies :
+                </p>
+
+                <p>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="hobi">Reading Books</label>
+
+                    <input type="checkbox" id="checkbox2">
+                    <label for="hobi">Fishing</label>
+
+                    <input type="checkbox" id="checkbox3">
+                    <label for="hobi">Swimming</label>
+                </p>
+
+                <p>
+                    <button class="resto-button bg-coklat" type="submit">
+                        <i class="fa fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="map.jpg" class="resto-image resto-greyscale" style="width:100%;margin-top:48px">
+        </div>
+    </div>
+
+    <!-- Footer -->
+  <footer class="resto-container bg-pink" style="padding: 4%;">
+    <div class="resto-col m2">
+      <img class="resto-image resto-round-large" src="foto bakoel koffie/Logo bakoel.png" alt="Buildings" width="150" height="150">
+    </div>
+
+    <div class="resto-col m8">
+      <h3>Bakoel Koffie</h3>
+      <p>Contact Us :</p>
+      <p><b>Cikini</b></p>
+      <p>+622131936608</p>
+      <p>Jl. Cikini Raya No.25, RT.16/RW.1, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330, Indonesia</p>
+      <p><b>Bintaro</b></p>
+      <p>+622174863443</p>
+      <p>Jl. Wahid Hasyim Fg-12/37, RT.02/RW.05, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15224, Indonesia</p>
+    </div>
+    <div class="resto-col m2">
+      <div class="resto-xlarge resto-section">
+        <i class="fa fa-twitter resto-hover-opacity"></i>
+        <i class="fa fa-facebook-official resto-hover-opacity"></i>
+        <i class="fa fa-instagram resto-hover-opacity"></i>
+        <i class="fa fa-youtube resto-hover-opacity"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function buka_togle() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function resto_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
