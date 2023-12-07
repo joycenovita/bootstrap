@@ -5,157 +5,143 @@
   <title>Bakoel Koffie</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f7ecc73a32e9067a9c3b392/1603106333054-XX5GPB1NKZPVYNS5431U/favicon.ico?format=100w">
-  <link rel="stylesheet" href="cssdasar.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://images.squarespace-cdn.com/content/v1/5f7ecc73a32e9067a9c3b392/1603106333054-XX5GPB1NKZPVYNS5431U/favicon.ico?format=100w">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <body>
+  <!-- Navbar (sit on top) -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: burlywood;">
+  <div class="container">
+      <a class="navbar-brand" href="#home">Bakoel Koffie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- Navbar (sit on top) -->
-<div class="resto-top bg-pink">
-  <div class="resto-bar resto-card" id="myNavbar">
-    <a href="#home" class="resto-bar-item resto-button resto-wide">Bakoel Koffie</a>
-    <!-- Right-sided navbar links -->
-    <div class="resto-right resto-hide-small">
-      <a href="index.html" class="resto-bar-item resto-button">HOME</a>
-      <a href="biodata.html" class="resto-bar-item resto-button"> BIODATA</a>
-      <a href="contact_us.html" class="resto-bar-item resto-button">CONTACT US</a>
-      <a href="about_us.html" class="resto-bar-item resto-button"> ABOUT US</a>
-      <div class="resto-dropdown-hover">
-        <button class="resto-button resto-black">Hover Over Me!</button>
-        <div class="resto-dropdown-content resto-bar-bloc k resto-border">
-          <a href="https://fti.unai.edu/" class="resto-bar-item resto-button">FTI UNAI</a>
-          <a href="https://unai.edu" class="resto-bar-item resto-button">UNAI</a>
+      <!-- Right-sided navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="biodata.html">BIODATA</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact_us.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">UNAI WEBSITE</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="https://fti.unai.edu/" class="dropdown-item">FTI UNAI</a></li>
+                    <li><a href="https://unai.edu" class="dropdown-item">UNAI</a></li>
+                  </ul>
+              </li>
+
+              <!-- Add social media icons -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/bakoelkoffie_id?lang=en" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Bakoelkoffie/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/bakoel_koffie/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCy8VkzXPMdukwwZtWdgxyMA" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Team Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Placeholder for the picture -->
+        <img src="jois.jpeg" alt="jois" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2>Joyce Novita Angeline Sinambela</h2>
+        <p><strong>NIM : </strong> 2281030 </p>
+        <p><strong>Email: </strong> 2281030@unai.edu </p>
+        <p><strong>Phone: </strong> 081935406434 </p>
+        <p><strong>Address:</strong> Perumahan Nuansa Permai, Depok, Jawa Barat, Indonesia</p>
+        
+        <h3>Education</h3>
+        <p><strong>Faculty: </strong>Information Technology</p>
+        <p><strong>Major: </strong>Informatics Engineering</p>
+        <p><strong>University: </strong> Indonesian Adventist University</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="p-3 border border-2 border-white rounded bg-light">
+          <p>Hi! I am a third semester student majoring in Information Technology and this is my final exam. To be honest, I wasn't particularly interested in this field, but I decided to pursue it as I believe it offers promising job prospects for the future. Outside of my studies, I enjoy playing music and singing, and I also like to read comics in my spare time.</p>
+          <p>I also love cats because they are such adorable creatures that can brighten up my mood when I feel stressed. Playing with them always brings me joy and happiness :D </p>
         </div>
       </div>
-      <a href="https://twitter.com/bakoelkoffie_id?lang=en" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-twitter"></i></a>
-      <a href="https://www.facebook.com/Bakoelkoffie/" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-facebook-official"></i></a>
-      <a href="https://www.instagram.com/bakoel_koffie/" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-instagram"></i></a>
-      <a href="https://www.youtube.com/channel/UCy8VkzXPMdukwwZtWdgxyMA" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-youtube"></i></a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="resto-bar-item resto-button resto-right resto-hide-large resto-hide-medium"
-      onclick="buka_togle()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="resto-sidebar resto-bar-block resto-black resto-card resto-animate-left resto-hide-medium resto-hide-large"
-  style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="resto_close()" class="resto-bar-item resto-button resto-large resto-padding-16">Close ×</a>
-  <a href="index.html" onclick="resto_close()" class="resto-bar-item resto-button">HOME</a>
-  <a href="biodata.html" onclick="resto_close()" class="resto-bar-item resto-button">BIODATA</a>
-  <a href="contact_us.html" onclick="resto_close()" class="resto-bar-item resto-button">CONTACT US</a>
-  <a href="about_us.html" onclick="resto_close()" class="resto-bar-item resto-button">ABOUT US</a>
-  <div class="resto-dropdown-hover">
-    <button class="resto-button resto-black">Hover Over Me!</button>
-    <div class="resto-dropdown-content resto-bar-bloc k resto-border">
-      <a href="https://fti.unai.edu/" class="resto-bar-item resto-button">FTI UNAI</a>
-      <a href="https://unai.edu" class="resto-bar-item resto-button">UNAI</a>
     </div>
   </div>
-  <a href="#" onclick="resto_close()" class="resto-bar-item resto-button ic-menu-hp">
-  <i class="fa fa-twitter resto-hover-opacity"></i> <i class="fa fa-facebook-official resto-hover-opacity"></i>
-  <i class="fa fa-instagram resto-hover-opacity"></i> <i class="fa fa-youtube resto-hover-opacity"></i></a>
-    
-</nav>
 
   
 
-  <!-- Team Section -->
-  <div class="resto-container" style="padding:128px 16px" id="team">
-    <h3 class="resto-center">About me</h3>
-    <p class="resto-center resto-large">The ones who runs this company</p>
-    <div class="resto-row-padding" style="margin-top:64px">
-        <div class="resto-col l3 m3 resto-margin-bottom ">
-            </div>
-        <div class="resto-col l6 m6 resto-margin-bottom ">
-        <div class="resto-card">
-          <img src="jois.jpeg" alt="Joyce" style="width:100%">
-          <div class="resto-container">
-            <h3>Joyce Novita Angeline Sinambela</h3>
-            <p class="resto-opacity">2281030</p>
-            <p>I am a third semester student majoring in Information Technology and this is my assignment. To be honest, I wasn't particularly interested in this field, but I decided to pursue it as I believe it offers promising job prospects for the future. Outside of my studies, I enjoy playing music and singing, and I also like to read comics in my spare time.</p>
-            <p> I also love cats because they are such adorable creatures that can brighten up my mood when I feel stressed. Playing with them always brings me joy and happiness.</p>
-            <p><button class="resto-button resto-block"><i class="fa fa-whatsapp"></i> wa me</button></p>
-            <p class="resto-center">
-                <i class="fa fa-facebook-official resto-hover-opacity"></i>
-                <i class="fa fa-instagram resto-hover-opacity"></i>
-                <i class="fa fa-snapchat resto-hover-opacity"></i>
-                <i class="fa fa-pinterest-p resto-hover-opacity"></i>
-                <i class="fa fa-twitter resto-hover-opacity"></i>
-                <i class="fa fa-linkedin resto-hover-opacity"></i>
-              </p>
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-pink p-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-2">
+                <img class="rounded-circle" src="foto bakoel koffie/Logo bakoel.png" alt="Buildings" width="150" height="150">
+              </div>
+  
+              <div class="col-md-8">
+                  <h3 class="text-start">Bakoel Koffie</h3>
+                  <p class="text-start">Contact Us :</p>
+                  <p class="text-start"><b>Cikini</b></p>
+                  <p class="text-start">+622131936608</p>
+                  <p class="text-start">Jl. Cikini Raya No.25, RT.16/RW.1, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330, Indonesia</p>
+                  <p class="text-start"><b>Bintaro</b></p>
+                  <p class="text-start">+622174863443</p>
+                  <p class="text-start">Jl. Wahid Hasyim Fg-12/37, RT.02/RW.05, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15224, Indonesia</p>
+              </div>
+  
+              <div class="col-md-2">
+                  <div class="d-flex resto-xlarge resto-section">
+                      <i class="bi bi-twitter resto-hover-opacity me-2"></i>
+                      <i class="bi bi-facebook resto-hover-opacity me-2"></i>
+                      <i class="bi bi-instagram resto-hover-opacity me-2"></i>
+                      <i class="bi bi-youtube resto-hover-opacity"></i>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-      <div class="resto-col l3 m3 resto-margin-bottom ">
-    </div>
-
-    </div>
-  </div>
-
-
-   <!-- Footer -->
-  <footer class="resto-container bg-pink" style="padding: 4%;">
-    <div class="resto-col m2">
-      <img class="resto-image resto-round-large" src="foto bakoel koffie/Logo bakoel.png" alt="Buildings" width="150" height="150">
-    </div>
-
-    <div class="resto-col m8">
-      <h3>Bakoel Koffie</h3>
-      <p>Contact Us :</p>
-      <p><b>Cikini</b></p>
-      <p>+622131936608</p>
-      <p>Jl. Cikini Raya No.25, RT.16/RW.1, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330, Indonesia</p>
-      <p><b>Bintaro</b></p>
-      <p>+622174863443</p>
-      <p>Jl. Wahid Hasyim Fg-12/37, RT.02/RW.05, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15224, Indonesia</p>
-    </div>
-    <div class="resto-col m2">
-      <div class="resto-xlarge resto-section">
-        <i class="fa fa-twitter resto-hover-opacity"></i>
-        <i class="fa fa-facebook-official resto-hover-opacity"></i>
-        <i class="fa fa-instagram resto-hover-opacity"></i>
-        <i class="fa fa-youtube resto-hover-opacity"></i>
-      </div>
-    </div>
   </footer>
 
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function buka_togle() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function resto_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

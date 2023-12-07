@@ -5,112 +5,129 @@
   <title>Bakoel Koffie</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f7ecc73a32e9067a9c3b392/1603106333054-XX5GPB1NKZPVYNS5431U/favicon.ico?format=100w">
-  <link rel="stylesheet" href="cssdasar.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://images.squarespace-cdn.com/content/v1/5f7ecc73a32e9067a9c3b392/1603106333054-XX5GPB1NKZPVYNS5431U/favicon.ico?format=100w">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <body>
-
   <!-- Navbar (sit on top) -->
-  <div class="resto-top bg-pink">
-    <div class="resto-bar resto-card" id="myNavbar">
-      <a href="#home" class="resto-bar-item resto-button resto-wide">Bakoel Koffie</a>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: burlywood;">
+  <div class="container">
+      <a class="navbar-brand" href="#home">Bakoel Koffie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
       <!-- Right-sided navbar links -->
-      <div class="resto-right resto-hide-small">
-        <a href="index.html" class="resto-bar-item resto-button">HOME</a>
-        <a href="biodata.html" class="resto-bar-item resto-button"> BIODATA</a>
-        <a href="contact_us.html" class="resto-bar-item resto-button">CONTACT US</a>
-        <a href="about_us.html" class="resto-bar-item resto-button"> ABOUT US</a>
-        <div class="resto-dropdown-hover">
-          <button class="resto-button resto-black">Hover Over Me!</button>
-          <div class="resto-dropdown-content resto-bar-bloc k resto-border">
-            <a href="https://fti.unai.edu/" class="resto-bar-item resto-button">FTI UNAI</a>
-            <a href="https://unai.edu" class="resto-bar-item resto-button">UNAI</a>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="biodata.html">BIODATA</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact_us.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">UNAI WEBSITE</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="https://fti.unai.edu/" class="dropdown-item">FTI UNAI</a></li>
+                    <li><a href="https://unai.edu" class="dropdown-item">UNAI</a></li>
+                  </ul>
+              </li>
+
+              <!-- Add social media icons -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/bakoelkoffie_id?lang=en" target="_blank" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/Bakoelkoffie/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/bakoel_koffie/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCy8VkzXPMdukwwZtWdgxyMA" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </li>
+            </ul>
         </div>
-        <a href="https://twitter.com/bakoelkoffie_id?lang=en" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/Bakoelkoffie/" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-facebook-official"></i></a>
-        <a href="https://www.instagram.com/bakoel_koffie/" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCy8VkzXPMdukwwZtWdgxyMA" target="_blank" class="resto-bar-item resto-button ic-sosmed"> <i class="fa fa-youtube"></i></a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-      <a href="javascript:void(0)" class="resto-bar-item resto-button resto-right resto-hide-large resto-hide-medium"
-        onclick="buka_togle()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
-  </div>
-
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="resto-sidebar resto-bar-block resto-black resto-card resto-animate-left resto-hide-medium resto-hide-large"
-    style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="resto_close()" class="resto-bar-item resto-button resto-large resto-padding-16">Close ×</a>
-    <a href="index.html" onclick="resto_close()" class="resto-bar-item resto-button">HOME</a>
-    <a href="biodata.html" onclick="resto_close()" class="resto-bar-item resto-button">BIODATA</a>
-    <a href="contact_us.html" onclick="resto_close()" class="resto-bar-item resto-button">CONTACT US</a>
-    <a href="about_us.html" onclick="resto_close()" class="resto-bar-item resto-button">ABOUT US</a>
-    <div class="resto-dropdown-hover">
-      <button class="resto-button resto-black">Hover Over Me!</button>
-      <div class="resto-dropdown-content resto-bar-bloc k resto-border">
-        <a href="https://fti.unai.edu/" class="resto-bar-item resto-button">FTI UNAI</a>
-        <a href="https://unai.edu" class="resto-bar-item resto-button">UNAI</a>
-      </div>
-    </div>
-    <a href="#" onclick="resto_close()" class="resto-bar-item resto-button ic-menu-hp">
-    <i class="fa fa-twitter resto-hover-opacity"></i> <i class="fa fa-facebook-official resto-hover-opacity"></i>
-    <i class="fa fa-instagram resto-hover-opacity"></i> <i class="fa fa-youtube resto-hover-opacity"></i></a>
-      
-  </nav>
+</nav>
 
     <!-- About Section -->
-    <div class="resto-container" style="padding:50px 16px" id="about">
-        <h3 class="resto-center">About Our Restaurant</h3>
-        <p class="resto-center resto-large">Our main goal is the best service for customers</p>
-        <div class="resto-row-padding resto-center" style="margin-top:64px">
-          <div class="resto-quarter">
-            <i class="fa fa-clock-o resto-margin-bottom resto-jumbo resto-center"></i>
-            <p class="resto-large">Fast Process</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore.</p>
+    <div class="container py-5" id="about">
+      <h3 class="text-center">About Our Restaurant</h3>
+      <p class="text-center fs-4">Our main goal is the best service for customers</p>
+    
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+        <div class="col">
+          <div class="card h-100">
+            <i class="bi bi-clock m-3 text-primary fs-1"></i>
+            <div class="card-body">
+              <h6 class="card-title text-center fs-3">Fast Process</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
           </div>
-          <div class="resto-quarter">
-            <i class="fa fa-heart resto-margin-bottom resto-jumbo"></i>
-            <p class="resto-large">Many Menu Options</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore.</p>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <i class="bi bi-heart m-3 text-danger fs-1"></i>
+            <div class="card-body">
+              <h6 class="card-title text-center fs-3">Many Menu Opt</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
           </div>
-          <div class="resto-quarter">
-            <i class="fa fa-diamond resto-margin-bottom resto-jumbo"></i>
-            <p class="resto-large">Premium Quality</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore.</p>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <i class="bi bi-diamond m-3 text-warning fs-1"></i>
+            <div class="card-body">
+              <h6 class="card-title text-center fs-3">Premium Quality</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
           </div>
-          <div class="resto-quarter">
-            <i class="fa fa-money resto-margin-bottom resto-jumbo"></i>
-            <p class="resto-large">Best Price</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore.</p>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <i class="bi bi-cash m-3 text-success fs-1"></i>
+            <div class="card-body">
+              <h6 class="card-title text-center fs-3">Best Price</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
       
         <!-- Work Section -->
-  
         <br>
-        <div class="container bg-pink" style="text-align: center;">
+        <div class="p-4 mb-4 text-center"><br>
           <h1>
             Follow our journey.
           </h1>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
+          <br><br>
+        
+          <div class="d-flex justify-content-center align-items-center">
+            <i class="bi bi-twitter me-2"></i>
+            <i class="bi bi-facebook me-2"></i>
+            <i class="bi bi-instagram me-2"></i>
+            <i class="bi bi-youtube me-2"></i>
+        </div>
+        
           
           <div class="embedsocial-hashtag" data-ref="889497bdb6edd7b8c90065bfc0e1291c15cba4fe"> <a
               class="feed-powered-by-es feed-powered-by-es-slider-new" href="https://embedsocial.com/social-media-aggregator/"
@@ -130,59 +147,39 @@
         </div>
       
 
-  <!-- Footer -->
-  <footer class="resto-container bg-pink" style="padding: 4%;">
-    <div class="resto-col m2">
-      <img class="resto-image resto-round-large" src="foto bakoel koffie/Logo bakoel.png" alt="Buildings" width="150" height="150">
+   <!-- Footer -->
+
+   <footer class="bg-pink p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+              <img class="rounded-circle" src="foto bakoel koffie/Logo bakoel.png" alt="Buildings" width="150" height="150">
+            </div>
+
+            <div class="col-md-8">
+                <h3 class="text-start">Bakoel Koffie</h3>
+                <p class="text-start">Contact Us :</p>
+                <p class="text-start"><b>Cikini</b></p>
+                <p class="text-start">+622131936608</p>
+                <p class="text-start">Jl. Cikini Raya No.25, RT.16/RW.1, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330, Indonesia</p>
+                <p class="text-start"><b>Bintaro</b></p>
+                <p class="text-start">+622174863443</p>
+                <p class="text-start">Jl. Wahid Hasyim Fg-12/37, RT.02/RW.05, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15224, Indonesia</p>
+            </div>
+
+            <div class="col-md-2">
+                <div class="d-flex resto-xlarge resto-section">
+                    <i class="bi bi-twitter resto-hover-opacity me-2"></i>
+                    <i class="bi bi-facebook resto-hover-opacity me-2"></i>
+                    <i class="bi bi-instagram resto-hover-opacity me-2"></i>
+                    <i class="bi bi-youtube resto-hover-opacity"></i>
+                </div>
+            </div>
+        </div>
     </div>
+</footer>
 
-    <div class="resto-col m8">
-      <h3>Bakoel Koffie</h3>
-      <p>Contact Us :</p>
-      <p><b>Cikini</b></p>
-      <p>+622131936608</p>
-      <p>Jl. Cikini Raya No.25, RT.16/RW.1, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330, Indonesia</p>
-      <p><b>Bintaro</b></p>
-      <p>+622174863443</p>
-      <p>Jl. Wahid Hasyim Fg-12/37, RT.02/RW.05, Pd. Jaya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15224, Indonesia</p>
-    </div>
-    <div class="resto-col m2">
-      <div class="resto-xlarge resto-section">
-        <i class="fa fa-twitter resto-hover-opacity"></i>
-        <i class="fa fa-facebook-official resto-hover-opacity"></i>
-        <i class="fa fa-instagram resto-hover-opacity"></i>
-        <i class="fa fa-youtube resto-hover-opacity"></i>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function buka_togle() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function resto_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
